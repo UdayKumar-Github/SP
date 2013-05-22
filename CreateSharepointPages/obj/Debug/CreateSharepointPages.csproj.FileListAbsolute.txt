@@ -1,0 +1,6 @@
+D:\Uday\ASTM PPS\CreateSharepointPages\CreateSharepointPages\bin\Debug\CreateSharepointPages.exe.config
+D:\Uday\ASTM PPS\CreateSharepointPages\CreateSharepointPages\bin\Debug\CreateSharepointPages.exe
+D:\Uday\ASTM PPS\CreateSharepointPages\CreateSharepointPages\bin\Debug\CreateSharepointPages.pdb
+D:\Uday\ASTM PPS\CreateSharepointPages\CreateSharepointPages\obj\Debug\CreateSharepointPages.exe
+D:\Uday\ASTM PPS\CreateSharepointPages\CreateSharepointPages\obj\Debug\CreateSharepointPages.pdb
+D:\Uday\ASTM PPS\CreateSharepointPages\CreateSharepointPages\obj\Debug\CreateSharepointPages.csprojResolveAssemblyReference.cache
