@@ -19,8 +19,10 @@ namespace CreateSharepointPages
             Console.WriteLine("1.Create Pages (Default)");
             Console.WriteLine("2.Delete Pages");
             string strVal= Console.ReadLine();
-            Console.WriteLine("Please enter site url");
+            Console.WriteLine("Please enter site url");            
             string strSiteUrl = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine();
             if (strVal == "2")
             {
                 DeleteAllPages(strSiteUrl);
@@ -37,16 +39,23 @@ namespace CreateSharepointPages
             {
                 using (SPWeb site = root.OpenWeb())
                 {
+
+                    deletesitepages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ADD_USER_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ASTMR_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.CHANGE_PASSWORD_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.COMPANY_LIST_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.COPY_FIELD_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.COPY_METHOD_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.COPY_TEST_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.DISPLAY_REPORTS_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_COMPANY_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_LAB_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_PROGRAM_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_USER_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.LAB_LIST_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.LAB_LIST_PAGE);                    
+                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_FIELD_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_METHOD_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_PROGRAM_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_TEST_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MYPROFILE_PAGE);
@@ -54,6 +63,7 @@ namespace CreateSharepointPages
                     deletesitepages(site, Constants.ConstantsHelper.PROGRAM_LIST_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.RUN_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.USER_LIST_PAGE);
+                    
                 }
 
             }
@@ -70,23 +80,30 @@ namespace CreateSharepointPages
                 using (SPWeb site = root.OpenWeb())
                 {
 
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.ADD_USER_PAGE, CreateSharepointPages.Constants.ConstantsHelper.ADD_USER_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.ASTMR_PAGE, CreateSharepointPages.Constants.ConstantsHelper.REPRODUCIBILITY_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.CHANGE_PASSWORD_PAGE, CreateSharepointPages.Constants.ConstantsHelper.CHANGE_PASSWORD_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.COMPANY_LIST_PAGE, CreateSharepointPages.Constants.ConstantsHelper.COMPANY_LIST_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.DISPLAY_REPORTS_PAGE, CreateSharepointPages.Constants.ConstantsHelper.DISPLAY_REPORTS_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.EDIT_COMPANY_PAGE, CreateSharepointPages.Constants.ConstantsHelper.EDIT_COMPANY_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.EDIT_LAB_PAGE, CreateSharepointPages.Constants.ConstantsHelper.EDIT_LAB_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.EDIT_PROGRAM_PAGE, CreateSharepointPages.Constants.ConstantsHelper.EDIT_PROGRAM_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.EDIT_USER_PAGE, CreateSharepointPages.Constants.ConstantsHelper.EDIT_USER_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.LAB_LIST_PAGE, CreateSharepointPages.Constants.ConstantsHelper.LAB_LIST_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.MANAGE_PROGRAM_PAGE, CreateSharepointPages.Constants.ConstantsHelper.MANAGE_PROGRAM_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.MANAGE_TEST_PAGE, CreateSharepointPages.Constants.ConstantsHelper.MANAGE_TEST_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.MYPROFILE_PAGE, CreateSharepointPages.Constants.ConstantsHelper.MYPROFILE_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_PAGE, CreateSharepointPages.Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.PROGRAM_LIST_PAGE, CreateSharepointPages.Constants.ConstantsHelper.PROGRAM_LIST_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.RUN_REPORT_PAGE, CreateSharepointPages.Constants.ConstantsHelper.RUN_REPORT_WEBPART);
-                    createpages(site, CreateSharepointPages.Constants.ConstantsHelper.USER_LIST_PAGE, CreateSharepointPages.Constants.ConstantsHelper.USER_LIST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE, Constants.ConstantsHelper.ADD_CONTROL_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ADD_USER_PAGE, Constants.ConstantsHelper.ADD_USER_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ASTMR_PAGE, Constants.ConstantsHelper.REPRODUCIBILITY_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.CHANGE_PASSWORD_PAGE, Constants.ConstantsHelper.CHANGE_PASSWORD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.COMPANY_LIST_PAGE, Constants.ConstantsHelper.COMPANY_LIST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.COPY_FIELD_PAGE, Constants.ConstantsHelper.COPY_FIELD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.COPY_METHOD_PAGE, Constants.ConstantsHelper.COPY_METHOD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.COPY_TEST_PAGE, Constants.ConstantsHelper.COPY_TEST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.DISPLAY_REPORTS_PAGE, Constants.ConstantsHelper.DISPLAY_REPORTS_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_COMPANY_PAGE, Constants.ConstantsHelper.EDIT_COMPANY_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_LAB_PAGE, Constants.ConstantsHelper.EDIT_LAB_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_PROGRAM_PAGE, Constants.ConstantsHelper.EDIT_PROGRAM_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_USER_PAGE, Constants.ConstantsHelper.EDIT_USER_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.LAB_LIST_PAGE, Constants.ConstantsHelper.LAB_LIST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_FIELD_PAGE, Constants.ConstantsHelper.MANAGE_FIELD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_METHOD_PAGE, Constants.ConstantsHelper.MANAGE_METHOD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_PROGRAM_PAGE, Constants.ConstantsHelper.MANAGE_PROGRAM_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_TEST_PAGE, Constants.ConstantsHelper.MANAGE_TEST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MYPROFILE_PAGE, Constants.ConstantsHelper.MYPROFILE_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_PAGE, Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.PROGRAM_LIST_PAGE, Constants.ConstantsHelper.PROGRAM_LIST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.RUN_REPORT_PAGE, Constants.ConstantsHelper.RUN_REPORT_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.USER_LIST_PAGE, Constants.ConstantsHelper.USER_LIST_WEBPART);
+                    
                 }
             }
             Console.WriteLine();
@@ -103,34 +120,50 @@ namespace CreateSharepointPages
             site.AllowUnsafeUpdates = true;
             PublishingWeb publishingWeb = PublishingWeb.GetPublishingWeb(site);
             PublishingPageCollection pages = publishingWeb.GetPublishingPages();
-            if (pages[publishingWeb.Url + "/Pages/" + pagename] == null)
+            try
             {
-                Console.WriteLine("Creating " + pagename.Replace("_", " ")); 
-                
-                PageLayout selectedLayout = null;
-                PageLayout[] layouts = publishingWeb.GetAvailablePageLayouts();
-                foreach (PageLayout layout in layouts)
+                if (pages[publishingWeb.Url + "/Pages/" + pagename] == null)
                 {
-                    if (layout.Name.Trim() == Constants.ConstantsHelper.PAGE_TEMPLATE)
+                    Console.WriteLine("Creating " + pagename.Replace("_", " "));
+
+                    PageLayout selectedLayout = null;
+                    PageLayout[] layouts = publishingWeb.GetAvailablePageLayouts();
+                    foreach (PageLayout layout in layouts)
                     {
-                        selectedLayout = layout;
+                        if (layout.Name.Trim() == Constants.ConstantsHelper.PAGE_TEMPLATE)
+                        {
+                            selectedLayout = layout;
+                        }
+
+                    }
+                    if (selectedLayout != null)
+                    {
+                        PublishingPage newPage = pages.Add(pagename, selectedLayout);
+                        newPage.ListItem.Update();
+                        newPage.Update();
+
+                        AddWebPartToPage(site, pagename, webpartname);
+                        newPage.CheckIn(webpartname + "is added");
+                        newPage.ListItem.File.Publish(pagename + " published successfully");
+                        Console.WriteLine("Created " + pagename.Replace("_", " "));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Page Layout is missing , Page not created ");
+                        Console.WriteLine();
+                        return;
                     }
 
                 }
-
-                PublishingPage newPage = pages.Add(pagename, selectedLayout);
-                newPage.ListItem.Update();
-                newPage.Update();
-
-                AddWebPartToPage(site, pagename, webpartname);
-                newPage.CheckIn(webpartname + "is added");
-                Console.WriteLine("Created " + pagename.Replace("_", " "));
+                else
+                {
+                    Console.WriteLine("Already exist " + pagename.Replace("_", " "));
+                }
             }
-            else 
+            catch (Exception ex)
             {
-                Console.WriteLine("Already exist " + pagename.Replace("_", " "));
             }
-
+            Console.WriteLine();
             site.AllowUnsafeUpdates = false;
              
         }
@@ -146,7 +179,8 @@ namespace CreateSharepointPages
                         Console.WriteLine("adding webpart " + webPartName.Replace("_", " ")); 
                         webPart.ChromeType = PartChromeType.None;
                         webPartManager.AddWebPart(webPart, "FullPage", 0);
-                        Console.WriteLine("added webpart " + webPartName.Replace("_", " ")); 
+                        Console.WriteLine("added webpart " + webPartName.Replace("_", " "));
+                        
                     }
 
                     // return webPart.ID;
@@ -205,7 +239,7 @@ namespace CreateSharepointPages
                 {
                     Console.WriteLine("Does not exist " + page.Replace("_", " "));
                 }
-
+                Console.WriteLine();
             }
             site.AllowUnsafeUpdates = false;
             
