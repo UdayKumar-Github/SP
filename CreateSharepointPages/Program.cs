@@ -40,7 +40,8 @@ namespace CreateSharepointPages
                 using (SPWeb site = root.OpenWeb())
                 {
                     deletesitepages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.ADD_GROUP_CONTROL_PAGE);
+                    
+                    deletesitepages(site, Constants.ConstantsHelper.ADD_GROUP_CONTRACT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ADD_MANAGERIAL_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ADD_USER_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ASTMR_PAGE);
@@ -76,6 +77,17 @@ namespace CreateSharepointPages
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_RESULTS_PAGE);
+
+
+                    deletesitepages(site, Constants.ConstantsHelper.LATEREGISTRANTS_COMMENT_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.NOTIFICATION_HISTORY_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_MANAGERIAL_REPORT_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_PAGE);
+                    
+
                     
                 }
 
@@ -94,7 +106,7 @@ namespace CreateSharepointPages
                 {
 
                     createpages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE, Constants.ConstantsHelper.ADD_CONTROL_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.ADD_GROUP_CONTROL_PAGE, Constants.ConstantsHelper.ADD_GROUP_CONTROL_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ADD_GROUP_CONTRACT_PAGE, Constants.ConstantsHelper.ADD_GROUP_CONTROL_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ADD_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.ADD_MANAGERIAL_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ADD_USER_PAGE, Constants.ConstantsHelper.ADD_USER_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ASTMR_PAGE, Constants.ConstantsHelper.REPRODUCIBILITY_WEBPART);
@@ -130,6 +142,17 @@ namespace CreateSharepointPages
                     createpages(site, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.VIEW_REPORT_PAGE, Constants.ConstantsHelper.VIEW_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.VIEW_RESULTS_PAGE, Constants.ConstantsHelper.VIEW_RESULT_WEBPART);
+
+
+                    createpages(site, Constants.ConstantsHelper.LATEREGISTRANTS_COMMENT_PAGE, Constants.ConstantsHelper.LATE_REGISTRANT_COMMENT_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.NOTIFICATION_HISTORY_PAGE, Constants.ConstantsHelper.NOTIFICATION_HISTORY_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.MANAGE_MANAGERIAL_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_PAGE, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_PAGE, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_PAGE, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_WEBPART);
+
+
                     
                 }
             }
