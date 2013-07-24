@@ -39,10 +39,10 @@ namespace CreateSharepointPages
             {
                 using (SPWeb site = root.OpenWeb())
                 {
-                    deletesitepages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE);
-                    
+                    deletesitepages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE);                    
                     deletesitepages(site, Constants.ConstantsHelper.ADD_GROUP_CONTRACT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ADD_MANAGERIAL_REPORT_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ADD_USER_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.ASTMR_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.CHANGE_PASSWORD_PAGE);
@@ -55,37 +55,46 @@ namespace CreateSharepointPages
                     deletesitepages(site, Constants.ConstantsHelper.DATA_COLLECTION_RESULT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.DATA_COLLECTION_SUBMIT_PAGE);                   
                     deletesitepages(site, Constants.ConstantsHelper.DISPLAY_REPORTS_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.DOWNLOAD_PDF_PAGE);                    
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_COMPANY_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_CONTRACT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_LAB_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_PROGRAM_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.EDIT_USER_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.LAB_LIST_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.LATE_REGISTRANTS_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.LATEREGISTRANTS_COMMENT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_FIELD_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_MANAGERIAL_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_METHOD_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_PROGRAM_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_RENEWALS_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MANAGE_TEST_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.MYPROFILE_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.NOTIFICATION_HISTORY_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.PROGRAM_LIST_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.REMOTE_TEMPLATE_VARIABLE_PAGE);                    
                     deletesitepages(site, Constants.ConstantsHelper.RUN_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.SEND_TEST_RENEWALNOTICE_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.UNSUBMITTED_TEST_RESULTS_PAGE);                  
                     deletesitepages(site, Constants.ConstantsHelper.USER_LIST_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.VERSION_DIALOG_PAGE);                    
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_REPORT_PAGE);
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_RESULTS_PAGE);
 
 
-                    deletesitepages(site, Constants.ConstantsHelper.LATEREGISTRANTS_COMMENT_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.NOTIFICATION_HISTORY_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_MANAGERIAL_REPORT_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_PAGE);
-                    deletesitepages(site, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_PAGE);
+                    
+                   
+                    
+                    
+                   
+                    
+                    
                     
 
                     
@@ -108,6 +117,7 @@ namespace CreateSharepointPages
                     createpages(site, Constants.ConstantsHelper.ADD_CONTROL_PAGE, Constants.ConstantsHelper.ADD_CONTROL_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ADD_GROUP_CONTRACT_PAGE, Constants.ConstantsHelper.ADD_GROUP_CONTROL_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ADD_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.ADD_MANAGERIAL_REPORT_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_PAGE, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ADD_USER_PAGE, Constants.ConstantsHelper.ADD_USER_WEBPART);
                     createpages(site, Constants.ConstantsHelper.ASTMR_PAGE, Constants.ConstantsHelper.REPRODUCIBILITY_WEBPART);
                     createpages(site, Constants.ConstantsHelper.CHANGE_PASSWORD_PAGE, Constants.ConstantsHelper.CHANGE_PASSWORD_WEBPART);
@@ -120,39 +130,37 @@ namespace CreateSharepointPages
                     createpages(site, Constants.ConstantsHelper.DATA_COLLECTION_RESULT_PAGE, Constants.ConstantsHelper.RESULT_CONTROL_WEBPART);
                     createpages(site, Constants.ConstantsHelper.DATA_COLLECTION_SUBMIT_PAGE, Constants.ConstantsHelper.SUBMIT_CONTROL_WEBPART);
                     createpages(site, Constants.ConstantsHelper.DISPLAY_REPORTS_PAGE, Constants.ConstantsHelper.DISPLAY_REPORTS_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.DOWNLOAD_PDF_PAGE, Constants.ConstantsHelper.DOWNLOAD_WEBPART);
                     createpages(site, Constants.ConstantsHelper.EDIT_COMPANY_PAGE, Constants.ConstantsHelper.EDIT_COMPANY_WEBPART);
                     createpages(site, Constants.ConstantsHelper.EDIT_CONTRACT_PAGE, Constants.ConstantsHelper.EDIT_CONTRACT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.EDIT_LAB_PAGE, Constants.ConstantsHelper.EDIT_LAB_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.EDIT_PROGRAM_PAGE, Constants.ConstantsHelper.EDIT_PROGRAM_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_PAGE, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_WEBPART);
                     createpages(site, Constants.ConstantsHelper.EDIT_USER_PAGE, Constants.ConstantsHelper.EDIT_USER_WEBPART);
                     createpages(site, Constants.ConstantsHelper.LAB_LIST_PAGE, Constants.ConstantsHelper.LAB_LIST_WEBPART);
                     createpages(site, Constants.ConstantsHelper.LATE_REGISTRANTS_PAGE, Constants.ConstantsHelper.LATE_REGISTRANTS_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.LATEREGISTRANTS_COMMENT_PAGE, Constants.ConstantsHelper.LATE_REGISTRANT_COMMENT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.MANAGE_FIELD_PAGE, Constants.ConstantsHelper.MANAGE_FIELD_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_PAGE, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.MANAGE_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.MANAGE_MANAGERIAL_WEBPART);
                     createpages(site, Constants.ConstantsHelper.MANAGE_METHOD_PAGE, Constants.ConstantsHelper.MANAGE_METHOD_WEBPART);
                     createpages(site, Constants.ConstantsHelper.MANAGE_PROGRAM_PAGE, Constants.ConstantsHelper.MANAGE_PROGRAM_WEBPART);
                     createpages(site, Constants.ConstantsHelper.MANAGE_RENEWALS_PAGE, Constants.ConstantsHelper.MANAGE_RENEWALS_WEBPART);
                     createpages(site, Constants.ConstantsHelper.MANAGE_TEST_PAGE, Constants.ConstantsHelper.MANAGE_TEST_WEBPART);
                     createpages(site, Constants.ConstantsHelper.MYPROFILE_PAGE, Constants.ConstantsHelper.MYPROFILE_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.NOTIFICATION_HISTORY_PAGE, Constants.ConstantsHelper.NOTIFICATION_HISTORY_WEBPART);
                     createpages(site, Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_PAGE, Constants.ConstantsHelper.PROGRAM_RESULT_UPLOAD_WEBPART);
                     createpages(site, Constants.ConstantsHelper.PROGRAM_LIST_PAGE, Constants.ConstantsHelper.PROGRAM_LIST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.REMOTE_TEMPLATE_VARIABLE_PAGE, Constants.ConstantsHelper.REMOTE_TEMPLATE_VARIABLE_WEBPART);                    
                     createpages(site, Constants.ConstantsHelper.RUN_REPORT_PAGE, Constants.ConstantsHelper.RUN_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.SEND_TEST_RENEWALNOTICE_PAGE, Constants.ConstantsHelper.SEND_TEST_RENEWALNOTICE_WEBPART);
                     createpages(site, Constants.ConstantsHelper.UNSUBMITTED_TEST_RESULTS_PAGE, Constants.ConstantsHelper.UNSUBMITTED_RESULTS_WEBPART);
                     createpages(site, Constants.ConstantsHelper.USER_LIST_PAGE, Constants.ConstantsHelper.USER_LIST_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.VERSION_DIALOG_PAGE, Constants.ConstantsHelper.VERSION_DIALOG_WEBPART);                    
                     createpages(site, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.VIEW_REPORT_PAGE, Constants.ConstantsHelper.VIEW_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.VIEW_RESULTS_PAGE, Constants.ConstantsHelper.VIEW_RESULT_WEBPART);
-
-
-                    createpages(site, Constants.ConstantsHelper.LATEREGISTRANTS_COMMENT_PAGE, Constants.ConstantsHelper.LATE_REGISTRANT_COMMENT_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.NOTIFICATION_HISTORY_PAGE, Constants.ConstantsHelper.NOTIFICATION_HISTORY_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.MANAGE_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.MANAGE_MANAGERIAL_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_PAGE, Constants.ConstantsHelper.ADD_REPORT_VARIABLE_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_PAGE, Constants.ConstantsHelper.EDIT_REPORT_VARIABLE_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.EDIT_MANAGERIAL_REPORT_WEBPART);
-                    createpages(site, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_PAGE, Constants.ConstantsHelper.MANAGE_GROUPCONTRACT_WEBPART);
-
-
                     
                 }
             }
