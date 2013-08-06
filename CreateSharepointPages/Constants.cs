@@ -11,11 +11,11 @@ namespace CreateSharepointPages
         internal class ConstantsHelper
         {
             //ASTM  WebPart Names
-           
-                
-                   
-                      
-                            
+
+
+
+
+
             public const string DISPLAY_CONTROLS_WEBPART = "ASTM.PPS.DataCollection_ASTMPPSDisplayControls.webpart";
             public const string DOWNLOAD_WEBPART = "ASTM.PPS.DataCollection_ASTMPPSDownload.webpart";
             public const string RESULT_CONTROL_WEBPART = " ASTM.PPS.DataCollection_ASTMPPSResultControl.webpart";
@@ -23,23 +23,23 @@ namespace CreateSharepointPages
             public const string VIEW_REPORT_WEBPART = "ASTM.PPS.DataCollection_ASTMPPSViewReport.webpart";
             public const string ADD_GROUP_CONTROL_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMAddGroupContractsWebPart.webpart";
             public const string ADD_MANAGERIAL_REPORT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMAddManagerialReportWebPart.webpart";
-         
-            public const string ADD_REPORT_VARIABLE_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMAddReportVarible.webpart"; 
-            
+
+            public const string ADD_REPORT_VARIABLE_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMAddReportVarible.webpart";
+
 
             public const string COPY_FIELD_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMCopyField.webpart";
             public const string COPY_METHOD_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMCopyMethodWebPart.webpart";
             public const string COPY_TEST_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMCopyTest.webpart";
             public const string DISPLAY_REPORTS_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMDisplayReportss.webpart";
             public const string EDIT_CONTRACT_WEBPART = " ASTM.PPS.SharePointWebParts_ASTMEditContractWebPart.webpart";
-            
-            
-            public const string EDIT_MANAGERIAL_REPORT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMEditManagerialReport.webpart"; 
+
+
+            public const string EDIT_MANAGERIAL_REPORT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMEditManagerialReport.webpart";
 
             public const string EDIT_REPORT_VARIABLE_WEBPART = " ASTM.PPS.SharePointWebParts_ASTMEditReportVarible.webpart";
-            
 
-           
+
+
 
             public const string LAB_LIST_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMLabListWebPart.webpart";
 
@@ -50,7 +50,7 @@ namespace CreateSharepointPages
 
             public const string NOTIFICATION_HISTORY_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMNotificationHistory.webpart";
 
-            
+
 
 
 
@@ -65,33 +65,37 @@ namespace CreateSharepointPages
             public const string EDIT_PROGRAM_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSEditProgramsWebPart.webpart";
             public const string EDIT_USER_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSEditUserWebPart.webpart";
             public const string LATE_REGISTRANT_COMMENT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSLateRegistrantCommentWebPart.webpart";
-            public const string LATE_REGISTRANTS_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSLateRegistrantsWebPart.webpart";          
+            public const string LATE_REGISTRANTS_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSLateRegistrantsWebPart.webpart";
             public const string MANAGE_FIELD_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSManageField.webpart";
             public const string MANAGE_METHOD_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSManageMethod.webpart";
             public const string MANAGE_PROGRAM_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSManageProgramWebPart.webpart";
-            public const string MANAGE_RENEWALS_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSManageRenewals.webpart";            
+            public const string MANAGE_RENEWALS_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSManageRenewals.webpart";
             public const string MANAGE_TEST_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSManageTest.webpart";
             public const string MYPROFILE_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSMyProfileWebPart.webpart";
             public const string USER_LIST_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMPPSUserListWebPart.webpart";
             public const string PROGRAM_RESULT_UPLOAD_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMProgramResultUploadWebPart.webpart";
             public const string PROGRAM_LIST_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMProgramsList.webpart";
             public const string REDIRECT_PAGE_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMRedirectPage.webpart";
-            public const string REMOTE_TEMPLATE_VARIABLE_WEBPART = " ASTM.PPS.SharePointWebParts_ASTMRemoteTemplateVariables.webpart";           
+            public const string REMOTE_TEMPLATE_VARIABLE_WEBPART = " ASTM.PPS.SharePointWebParts_ASTMRemoteTemplateVariables.webpart";
             public const string REPRODUCIBILITY_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMReproducibilityWebPart.webpart";
             public const string RUN_REPORT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMRunReportlWebPart.webpart";
-            public const string SEND_TEST_RENEWALNOTICE_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMSendTestRenewalNoticeWebPart.webpart";            
+            public const string SEND_TEST_RENEWALNOTICE_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMSendTestRenewalNoticeWebPart.webpart";
             public const string UNSUBMITTED_RESULTS_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMUnsubmittedResultsWebPart.webpart";
-            public const string VERSION_DIALOG_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMVersionDialog.webpart";            
-            public const string VIEW_MANAGERIAL_REPORT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMViewManagerialReportsWebPart.webpart";           
+            public const string VERSION_DIALOG_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMVersionDialog.webpart";
+            public const string VIEW_MANAGERIAL_REPORT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMViewManagerialReportsWebPart.webpart";
             public const string VIEW_RESULT_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMViewResultWebPart.webpart";
             public const string DATA_COLLECTION_ENTRY_WEBPART = "ASTM.PPS.SharePointWebParts_DataCollectionEntry.webpart";
-            
-                
-            
-            
+
+            public const string EditPropertyComparison_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMEditPropertyComparisonWebPart.webpart";
+            public const string EditReportVarible_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMEditReportVarible.webpart";
+            public const string AddPropertyComparison_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMAddPropertyComparisonWebPart.webpart";
+            public const string ViewPropertyComparison_WEBPART = "ASTM.PPS.SharePointWebParts_ASTMViewPropertyComparisonWebPart.webpart";
+
+
+
             //ASTM Page Names
 
-                     
+
 
             public const string PAGE_TEMPLATE = "ASTMWebPartPage.aspx";
 
@@ -113,7 +117,7 @@ namespace CreateSharepointPages
             public const string DISPLAY_REPORTS_PAGE = "DisplayReports.aspx";
 
             public const string DOWNLOAD_PDF_PAGE = "downloadpdf.aspx";
-            
+
             public const string EDIT_COMPANY_PAGE = "EditCompany.aspx";
             public const string EDIT_CONTRACT_PAGE = "EditContract.aspx";
             public const string EDIT_LAB_PAGE = "EditLab.aspx";
@@ -137,36 +141,39 @@ namespace CreateSharepointPages
             public const string PROGRAM_LIST_PAGE = "ProgramsList.aspx";
 
             public const string REMOTE_TEMPLATE_VARIABLE_PAGE = "RemoteTemplateVariables.aspx";
-            
+
             public const string RUN_REPORT_PAGE = "RunReportl.aspx";
             public const string SEND_TEST_RENEWALNOTICE_PAGE = "SendTestRenewalnotice.aspx";
             public const string UNSUBMITTED_TEST_RESULTS_PAGE = "UnsubmitTestResults.aspx";
             public const string USER_LIST_PAGE = "UserList.aspx";
 
             public const string VERSION_DIALOG_PAGE = "VersionDialog.aspx";
-            
+
             public const string VIEW_MANAGERIAL_REPORT_PAGE = "ViewManagerialReports.aspx";
             public const string VIEW_REPORT_PAGE = "ViewReport.aspx";
             public const string VIEW_RESULTS_PAGE = "ViewResults.aspx";
 
-
-           
-            
-            
-            
-            
-            
-            
+            public const string EditPropertyComparison_PAGE = "EditPropertyComparison.aspx";
+            public const string EditReportVarible_PAGE = "EditReportVarible.aspx";
+            public const string AddPropertyComparison_PAGE = "AddPropertyComparison.aspx";
+            public const string ViewPropertyComparison_PAGE = "ViewPropertyComparison.aspx";
 
 
 
-             
 
-  
 
-            
-                
-                 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

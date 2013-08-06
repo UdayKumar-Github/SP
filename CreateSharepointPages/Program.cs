@@ -88,7 +88,10 @@ namespace CreateSharepointPages
                     deletesitepages(site, Constants.ConstantsHelper.VIEW_RESULTS_PAGE);
 
 
-                    
+                    deletesitepages(site, Constants.ConstantsHelper.EditPropertyComparison_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.EditReportVarible_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.AddPropertyComparison_PAGE);
+                    deletesitepages(site, Constants.ConstantsHelper.ViewPropertyComparison_PAGE);
                    
                     
                     
@@ -161,6 +164,10 @@ namespace CreateSharepointPages
                     createpages(site, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_PAGE, Constants.ConstantsHelper.VIEW_MANAGERIAL_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.VIEW_REPORT_PAGE, Constants.ConstantsHelper.VIEW_REPORT_WEBPART);
                     createpages(site, Constants.ConstantsHelper.VIEW_RESULTS_PAGE, Constants.ConstantsHelper.VIEW_RESULT_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EditPropertyComparison_PAGE, Constants.ConstantsHelper.EditPropertyComparison_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.EditReportVarible_PAGE, Constants.ConstantsHelper.EditReportVarible_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.AddPropertyComparison_PAGE, Constants.ConstantsHelper.AddPropertyComparison_WEBPART);
+                    createpages(site, Constants.ConstantsHelper.ViewPropertyComparison_PAGE, Constants.ConstantsHelper.ViewPropertyComparison_WEBPART);
                     
                 }
             }
